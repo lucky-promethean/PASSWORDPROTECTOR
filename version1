@@ -1,0 +1,16 @@
+import getpass 
+  
+user = getpass.getuser() 
+tf = 'PATHTOPRIVATEDATAFILE'
+while True: 
+	pwd = getpass.getpass(prompt='enter password ') 
+
+	if pwd == 'THISISTHEPASSWORD': 
+		print ("Welcome!!!")
+		f=open(tf)
+		print(f.read())
+		
+	break
+else: 
+	print ("The password you entered is incorrect.")
+                
